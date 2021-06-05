@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {%%}
+    <title>Flask blog</title>
+</head>
+<body>
+    {% for post in posts %}
+        <h1>{{post.title}}</h1>
+        <p>{{ post.author }}</p>
+    {% endfor %}
+</body>
+</html>

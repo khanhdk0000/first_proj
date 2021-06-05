@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block content %}
+<p>{{ var}}</p>
+<div class="card">
+    <div class="card-body text-center d-flex justify-content-center align-items-center flex-column">
+      <p>Change actual color and check how every color representation is described in the list</p>
+      <button id="color-picker-6" class="btn btn-primary btn-sm">Color Picker</button>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body text-center d-flex justify-content-center align-items-center flex-column">
+      <ul class="list-group list-group-flush w-100">
+        <li class="list-group-item" id="hex"></li>
+        <li class="list-group-item" id="rgba"></li>
+        <li class="list-group-item" id="hsla"></li>
+        <li class="list-group-item" id="hsva"></li>
+        <li class="list-group-item" id="cmyk"></li>
+      </ul>
+    </div>
+  </div>
+{% endblock content %}
